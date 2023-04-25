@@ -10,7 +10,6 @@ import { ProductsComponent } from './products/products.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CathegoryProductComponent } from './cathegory-product/cathegory-product.component';
 import { ForumComponent } from './forum/forum.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { PaymentComponent } from './payment/payment.component';
@@ -22,7 +21,6 @@ import { PaymentComponent } from './payment/payment.component';
   
    ProductsComponent,
    NavbarComponent,
-   CathegoryProductComponent,
    ForumComponent,
    ChatbotComponent,
    PaymentComponent,
