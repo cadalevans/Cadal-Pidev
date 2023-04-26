@@ -1,1 +1,51 @@
-<p>list works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<div style="text-align: center">
+    <h1>{{message}}</h1>
+</div>
+ <!-- START SIMPLE DATATABLE -->
+ <div class="panel panel-default">
+    <div class="panel-heading">                                
+        <h3 class="panel-title">requests</h3>   
+        <ul class="panel-controls">
+            <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span></a></li>
+            <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+            <li><a href="#" class="panel-remove"><span class="fa fa-times"></span></a></li>
+        </ul>                                
+    </div>
+    <div class="panel-body">
+        <table class="table datatable_simple">
+            <thead>
+                <tr>
+                    <th width="50">id</th>
+                    <th>name</th>
+                    <th width="100">status</th>
+                    <th width="100">amount</th>
+                    <th width="100">term</th>
+                    <th width="100">interest rate</th>
+                    <th width="100">insurance amount</th>
+                    <th width="100">actions</th>
+                </tr>
+            </thead>
+            <tbody>                                            
+                <!-- Loop through loans array and create table rows -->
+                <tr *ngFor="let loan of listLoans">
+                    <td class="text-center">{{ loan.idLoan }}</td>
+                    <td><strong>{{ loan.name }}</strong></td>
+                    <td><span class="label label-{{ loan.statusClass }}">{{ loan.status }}</span></td>
+                    <td>{{ loan.amount }}</td>
+                    <td>{{ loan.term_loan }}</td>
+                    <td>{{ loan.interestRate }}%</td>
+                    <td>{{ loan.insuranceamount  }}</td>
+                    <td>
+                        <button class="btn btn-default btn-rounded btn-sm"><span class="fa fa-pencil"></span></button>
+                        <button class="btn btn-danger btn-rounded btn-sm" ><span class="fa fa-times"></span></button>
+                    </td>
+            </tbody>
+              
+        </table>
+    </div>
+</div>
+<!-- END SIMPLE DATATABLE -->

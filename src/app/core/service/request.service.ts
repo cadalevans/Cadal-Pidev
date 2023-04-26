@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient ,HttpHeaders } from '@angular/common/http';
+import { loan } from '../model/loan';
 @Injectable({
   providedIn: 'root'
 })
@@ -18,5 +19,8 @@ export class RequestService {
   }
   public getAllRequests(){
     return this.httpClient.get("http://localhost:8081/RequestLoan/all",this.adminhttpOptions)
+  }
+  public getAllLoans(){
+    return this.httpClient.get("http://localhost:8081/Loan/all",this.adminhttpOptions)
   }
 }

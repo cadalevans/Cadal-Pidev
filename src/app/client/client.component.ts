@@ -7,30 +7,28 @@ import { Component, OnInit ,Renderer2} from '@angular/core';
 })
 export class ClientComponent implements OnInit {
   readonly styles:string[] = [
-    "/assets/admin/css/theme-default.css"
+    "/assets/client/css/bootstrap.min.css",
+    "/assets/client/css/font-awesome.min.css",
+    "/assets/client/css/elegant-icons.css",
+    "/assets/client/css/nice-select.css",
+    "/assets/client/css/magnific-popup.css",
+    "/assets/client/css/jquery-ui.min.css",
+    "/assets/client/css/owl.carousel.min.css",
+    "/assets/client/css/slicknav.min.css",
+    "/assets/client/css/style.css" ,
+    "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
   ];
-
+ 
   readonly js: string[]=[
-    "/assets/admin/js/plugins/jquery/jquery.min.js",
-    "/assets/admin/js/plugins/jquery/jquery-ui.min.js",
-    "/assets/admin/js/plugins/bootstrap/bootstrap.min.js",
-    '/assets/admin/js/plugins/icheck/icheck.min.js',
-    "/assets/admin/js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js",
-    "/assets/admin/js/plugins/scrolltotop/scrolltopcontrol.js",
-    "/assets/admin/js/plugins/morris/raphael-min.js",
-    "/assets/admin/js/plugins/morris/morris.min.js",
-    "/assets/admin/js/plugins/rickshaw/d3.v3.js",
-    "/assets/admin/js/plugins/rickshaw/rickshaw.min.js",
-    '/assets/admin/js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js',
-    '/assets/admin/js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js',
-    '/assets/admin/js/plugins/bootstrap/bootstrap-datepicker.js',
-    "/assets/admin/js/plugins/owl/owl.carousel.min.js",
-    "/assets/admin/js/plugins/moment.min.js",
-    "/assets/admin/js/plugins/daterangepicker/daterangepicker.js",
-    "/assets/admin/js/settings.js",
-    "/assets/admin/js/plugins.js",
-    "/assets/admin/js/actions.js",
-    "/assets/admin/js/demo_dashboard.js"
+    "/assets/client/js/jquery-3.3.1.min.js",
+    "/assets/client/js/bootstrap.min.js",
+    "/assets/client/js/jquery.nice-select.min.js",
+    "/assets/client/js/jquery-ui.min.js",
+    "/assets/client/js/jquery.nicescroll.min.js",
+    "/assets/client/js/jquery.magnific-popup.min.js",
+    "/assets/client/js/jquery.slicknav.js",
+    "/assets/client/js/owl.carousel.min.js",
+    "/assets/client/js/main.js"
   ];
 
   constructor(private renderer: Renderer2) { }

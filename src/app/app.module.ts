@@ -14,16 +14,18 @@ import { ForumComponent } from './forum/forum.component';
 import { ChatbotComponent } from './chatbot/chatbot.component';
 import { PaymentComponent } from './payment/payment.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    RequestLoanComponent,
-  
-   ProductsComponent,
    NavbarComponent,
    ForumComponent,
    ChatbotComponent,
    PaymentComponent,
+
+  
+   
   
   
   ],
